@@ -54,10 +54,10 @@ bool DList::empty() const{
 int DList::size() const{
 	return size_;
 }
-int DList::frontData(){
+int DList::frontData() const{
 	return front_->next_->data_;
 }
-int DList::backData(){
+int DList::backData() const{
 	return back_->prev_->data_;
 }
 
@@ -131,9 +131,9 @@ bool SList::empty() const{
 int SList::size() const{
 	return size_;
 }
-int SList::frontData(){
+int SList::frontData() const{
 	return front_->data_;
 }
-int SList::backData(){
+int SList::backData() const{
 	return back_->data_;
 }

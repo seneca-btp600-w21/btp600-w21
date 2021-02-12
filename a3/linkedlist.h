@@ -7,8 +7,8 @@ public:
 	virtual void push_back(const int& data)=0;
 	virtual void pop_front()=0;
 	virtual void pop_back()=0;
-	virtual int frontData()=0;
-	virtual int backData()=0;
+	virtual int frontData() const=0;
+	virtual int backData() const=0;
 	virtual bool empty() const=0;
 	virtual int size() const=0;
 	virtual ~LinkedList(){}
@@ -38,8 +38,8 @@ public:
 	virtual void push_back(const int& data);
 	virtual void pop_front();
 	virtual void pop_back();
-	virtual int frontData();
-	virtual int backData();
+	virtual int frontData() const;
+	virtual int backData() const;
 	virtual bool empty() const;
 	virtual int size() const;
 	virtual ~DList();
@@ -67,8 +67,8 @@ public:
 	virtual void push_back(const int& data);
 	virtual void pop_front();
 	virtual void pop_back();
-	virtual int frontData();
-	virtual int backData();
+	virtual int frontData() const;
+	virtual int backData() const;
 	virtual bool empty() const;
 	virtual int size() const;
 	virtual ~SList();
